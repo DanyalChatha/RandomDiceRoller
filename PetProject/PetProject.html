@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="PetProject.js"></script>
+    <link href="PetProject.css" rel="stylesheet" type="text/css">
+    <title>Risk Random Dice Roller</title>
+</head>
+<body>
+
+<!-- PLAYER'S INFO -->
+<div class="playersInfo">
+  <form name="player_form" id="player_id" method="post">
+    <fieldset>
+
+      <p><!-- ATTACKER NAME -->
+        <label for="id_name">Attacker Name:</label>
+        <input type="text" name="user_name" id="id_name">
+      </p>
+
+      <p><!-- DEFENDER NAME -->
+        <label for="d_name">Defender Name:</label>
+        <input type="text" name="defender_name" id="d_name">
+      </p>
+
+      <p><!-- COLOUR FOR ATTACKER -->
+        <label for="id_colour">Attacker Pick a Colour:</label>
+        <input type="color" name="user_colour" id="id_colour">
+      </p>
+
+      <p><!-- COLOUR FOR DEFENDER -->
+        <label for="id_dcolour">Defender Pick a Colour:</label>
+        <input type="color" name="user_dcolour" id="id_dcolour">
+      </p>
+
+      <p><!--START GAME BUTTON -->
+        <input type="submit" value="Start Game" id="next_player">
+      </p>
+    </fieldset>
+  </form>
+</div>
+
+
+<!-- RANDOM DICE GENERATOR-->
+<div class="randomDice">
+  <form name="diceGen" id="dice_id">
+    <fieldset>
+      
+      <!-- RANDOM DICE GENERATOR FOR ATTACKER -->
+      <div class="attackDice">
+       <h3><span id="attack_name"></span> (Attacker Dice)</h3>
+       <p id="attacker">
+         <input id="aDice" type="button" value="Roll Dice">
+         <input type="text" id="attackerDice" name="attackerDice">
+       </p>
+      </div>
+                  
+      <!-- RANDOM DICE GENERATOR FOR DEFENDER-->
+      <div class="defendDice">
+       <h3><span id="defend_name"></span> (Defender Dice)</h3>
+       <p>
+         <input type="text" id="defenderDice" name="defenderDice">
+         <input id="dDice"  type="button" value="Roll Dice">
+       </p>
+      </div>
+    </fieldset>
+    
+     <!-- BUTTON TO SUBMIT THE ROLLS TO SEE WHO WON -->
+      <div class="submitAttack">
+        <input type="button" id="submit" value="Submit the Attack">
+      </div>
+     
+     <!-- MESSAGE ON WHO WON-->
+       <div class="message">
+          <h2><span id="msg_winner"></span></h2>
+       </div> 
+  </form>
+</div>
+
+</body>
+</html>
