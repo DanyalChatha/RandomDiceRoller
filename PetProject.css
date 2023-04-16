@@ -1,0 +1,62 @@
+/* CLASSES*/
+/* STYLING USER INPUT SECTION (GIVING BEIGE COLOURING TO MATCH THE THEME OF AN ARMY LOOK)*/
+.playersInfo{
+    border: 1px solid #000;
+    padding: 1em;
+    text-align: center;
+    background-color:beige;
+}
+
+/* GETTING THE BUTTON AND INPUT ELEMENT ACROSS EACH OTHER*/
+.defendDice{
+    float: right;
+    width: 50%;
+}
+
+.attackDice{
+    float: left;
+    width: 50%;
+}
+
+/* STYLING THE DICE GENERATOR SECTION (GIVING BEIGE COLOURING TO MATCH THE THEME OF AN ARMY LOOK*/
+.randomDice{
+    text-align: center;
+    background-color: beige;
+}
+
+/* ID'S */
+/* STYLING THE BUTTONS TO MATCH THE THEME OF RISK DICE*/
+#aDice{
+background-color: red;
+color: white;
+}
+
+#dDice{
+background-color: blue;
+color: white;
+}
+
+/*GIVING THE BUTTON A GREEN COLOR TO MATCH THE EARTH THEME*/
+#next_player{
+background-color: green;
+color: white;
+}
+
+#submit{
+background-color: rgb(25, 210, 44);
+color: white;
+}
+
+
+/*STYLING THE SIZE AND PLACEMENT TO MAKE THE NUMBER APPEAR BIGGER AND EAISER TO READ*/
+#attackerDice{
+font-size: 30px;
+text-align: center;
+}
+
+#defenderDice{
+font-size: 30px;
+text-align: center;
+}
+
+
