@@ -61,23 +61,22 @@ window.onload = function(){
     var message = document.getElementById("msg_winner");
 
     submition.onclick = diceRolled
-    function diceRolled(){
-
-    if  ( newofense.value > newdefense.value){
-      message.innerHTML = (user_name.value + " has won, 1 army loss to " + defender.value);
-      message.style.color = "red"
-
-    } else if (newofense.value < newdefense.value){
-      message.innerHTML = (defender.value + " has won, 1 army loss to " + user_name.value);
-      message.style.color = "blue"
-
-    } else {
-      message.innerHTML = (defender.value + " has won, 1 army loss to " + user_name.value);
-      message.style.color = "blue"
-
+   function diceRolled(){
+      var attackerValue = parseInt(newofense.value);
+      var defenderValue = parseInt(newdefense.value);
+    
+      if  ( attackerValue > defenderValue){
+        message.innerHTML = (user_name.value + " has won, 1 army loss to " + defender.value);
+        message.style.color = "red";
+      } else if (attackerValue < defenderValue){
+        message.innerHTML = (defender.value + " has won, 1 army loss to " + user_name.value);
+        message.style.color = "blue";
+      } else {
+        message.innerHTML = (defender.value + " has won, 1 army loss to " + user_name.value);
+        message.style.color = "blue";
+      }
     }
     
-  }
 
   return false; 
 
